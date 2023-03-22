@@ -110,3 +110,4 @@ alias domainless="sed 's/http:\/\/[^\/]*//'"
 alias trim="sed 's/^ *//;s/ *$//'"
 alias qscut="awk -F'[&]' '{s=0; for (i=1; i<=NF; i++) print $i}'"
 alias kurl='curl -svo /dev/null -H "Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no, akamai-x-get-request-id" '
+alias brew='arch -arm64 brew'
