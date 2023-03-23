@@ -69,8 +69,10 @@ plugins=(
 	npm
 	nvm
 	jsontools
-	osx
+	macos
 	svn-fast-info
+	iterm2
+	ripgrep
 )
 
 source $ZSH/oh-my-zsh.sh
