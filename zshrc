@@ -10,8 +10,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 ### Add npm installed packages
 export PATH="/usr/local/share/npm/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -d  /opt/homebrew ] && eval $(/opt/homebrew/bin/brew shellenv)
+
+zstyle ':omz:plugins:nvm' autoload yes
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jorbin/.oh-my-zsh"
@@ -66,6 +67,7 @@ plugins=(
 	command-not-found
 	extract
 	npm
+	nvm
 	jsontools
 	osx
 	svn-fast-info
